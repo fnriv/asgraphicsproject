@@ -1,0 +1,36 @@
+@import "../../app/styles/variables.scss";
+@import "../../app/styles/globals.scss";
+
+.park__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem 15%;
+    text-align: left;
+    padding: 2rem 2rem;
+}
+
+.park {
+    // flex: 0 0 calc(50% - 20px); 
+    margin: 0 2rem;
+}
+
+.park__heading {
+    font-family: $font-primary;
+    font-size: 24;
+    font-weight: normal;
+    padding: 1rem;
+}
+
+.park__paragraph {
+    font-family: $font-secondary;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 1rem;
+    // border-radius: 8px;
+
+    position: relative; // Add this for absolute positioning of child
+    width: 95%; // Full width
+    overflow: hidden; // Prevent image overflow
+}
