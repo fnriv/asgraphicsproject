@@ -1,0 +1,63 @@
+@import "../../app/styles/variables.scss";
+@import "../../app/styles/globals.scss";
+
+.footer__container {
+    font-family: $font-secondary;
+    font-size: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #2B2C2E;
+    color: white;
+        text-transform: uppercase;
+
+
+    // @media (max-width: $breakpoint-md) {
+    //     flex-direction: column;
+    //     padding: 1rem;
+    // }
+    
+}
+.footer__logo{
+
+    font-family: 'Graphik', sans-serif;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.3s;
+
+    &:hover {
+        color: pink;
+    }
+    &:visited {
+        color: white; /* Keep link white after visited */
+    }
+    &:active {
+        color: white; /* Keep link white when active */
+    }
+}
+.footer__links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        transition: color 0.3s;
+
+        &:visited {
+            color: white; /* Keep link white after visited */
+        }
+        &:active {
+            color: white; /* Keep link white when active */
+        }
+        &:hover {
+            color: pink;
+        }
+    }
+}

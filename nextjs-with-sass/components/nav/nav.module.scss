@@ -1,0 +1,33 @@
+@import "../../app/styles/variables.scss";
+@import "../../app/styles/globals.scss";
+
+.navbar__container {
+    font-family: $font-secondary;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    // background-color: $primary-color;
+    color: white;
+
+    // @media (max-width: $breakpoint-md) {
+    //     flex-direction: column;
+    //     padding: 1rem;
+    // }
+}
+
+.navbar__links {
+    display: flex;
+    gap: 2rem;
+
+    a {
+        text-decoration: none;
+        color: blue;
+        font-weight: 600;
+        transition: color 0.3s;
+
+        &:hover {
+            color: #2589FE;
+        }
+    }
+}

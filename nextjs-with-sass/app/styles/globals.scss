@@ -1,1 +1,22 @@
 // This file contains global styles that apply to the entire application.
+
+@font-face {
+    font-family: 'Graphik';
+    font-style: bold;
+    src: url("/fonts/Graphik/Graphik_Family/Graphik-Regular-Trial.otf") format("opentype");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Ogg';
+    font-style: bold;
+    src: url("/fonts/Ogg/Ogg-Regular.otf") format("opentype");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Ogg';
+    font-style: light;
+    src: url("/fonts/Ogg/Ogg-Light.otf") format("opentype");
+    font-weight: 200;
+}

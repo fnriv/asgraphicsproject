@@ -1,0 +1,45 @@
+@import "../../app/styles/variables.scss";
+@import "../../app/styles/globals.scss";
+
+.title__container {
+    font-family: $font-primary;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin: 0rem 2rem auto;
+    padding: 1rem;
+    border-radius: 8px;
+
+    position: relative; // Add this for absolute positioning of child
+    width: 100%; // Full width
+    height: 682px; // Set height for the image
+    margin: 2rem auto; // Center container
+    overflow: hidden; // Prevent image overflow
+
+    // @media (max-width: $breakpoint-md) {
+    //     font-size: 1.5rem;
+    //     padding: 0.5rem;
+    // }
+}
+
+.title__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img {
+    width: 100%;
+    height: 682px;
+    border-radius: 8px;
+    padding: 2rem auto;
+    transition: transform 0.3s;
+    object-fit: cover;
+    object-position: center;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}

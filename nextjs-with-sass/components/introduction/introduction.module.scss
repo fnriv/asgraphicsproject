@@ -1,0 +1,43 @@
+@import "../../app/styles/variables.scss";
+@import "../../app/styles/globals.scss";
+
+.intro__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 9rem;
+    margin: 4rem 15%;
+    color: black;
+    text-align: center;
+
+}
+
+.heading {
+    font-family: $font-primary;
+    font-size: 36px;
+    font-weight: normal;
+    font-weight: 400;
+    text-align: center;
+    padding: 1rem;
+
+    position: relative; // Add this for absolute positioning of child
+    width: 100%; // Full width
+    overflow: hidden; // Prevent image overflow
+
+}
+
+.paragraph {
+    font-family: $font-secondary;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    padding: 1rem;
+    // border-radius: 8px;
+
+    position: relative; // Add this for absolute positioning of child
+    width: 100%; // Full width
+    overflow: hidden; // Prevent image overflow
+
+}
