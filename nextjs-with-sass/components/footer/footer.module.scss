@@ -30,7 +30,7 @@
     transition: color 0.3s;
 
     &:hover {
-        color: pink;
+        color: #778eaa;
     }
     &:visited {
         color: white; /* Keep link white after visited */
@@ -57,7 +57,7 @@
             color: white; /* Keep link white when active */
         }
         &:hover {
-            color: pink;
+            color: #778eaa;
         }
     }
 }
