@@ -13,7 +13,7 @@ export default function Title() {
                 alt="Image"
                 // width={500}
                 // height={500}
-                className="title__image"
+                className={styles.img}
             />
             <div className={styles.title__text}> Lorem Ipsum </div>
         </div>

@@ -15,7 +15,7 @@ export default function Nav() {
     return (
         <nav className={`navbar ${myFont.className}`}>
             <div className={styles.navbar__container}>
-                <Link href="/" className="navbar__logo">
+                <Link href="/" className={styles.nav__logo}>
                     LOREM IPSUM
                 </Link>
                 <ul className={styles.navbar__links}>

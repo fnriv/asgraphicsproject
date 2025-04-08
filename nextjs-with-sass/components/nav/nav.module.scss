@@ -16,13 +16,22 @@
     // }
 }
 
+.nav__logo {
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+        color: #2589FE;
+    }
+}
+
 .navbar__links {
     display: flex;
     gap: 2rem;
 
     a {
         text-decoration: none;
-        color: blue;
+        color: black;
         font-weight: 600;
         transition: color 0.3s;
 
