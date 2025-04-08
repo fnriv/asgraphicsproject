@@ -22,7 +22,7 @@ export default function Footer() {
                         <Link href="/facebook">FACEBOOK</Link>
                     </li>
                     <li>
-                        <Link href="/linkedin">LINKEDIN</Link>
+                        <Link href="https://www.linkedin.com/in/faithnrivera">LINKEDIN</Link>
                     </li>
                 </ul>
             </div>

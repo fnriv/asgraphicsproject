@@ -13,12 +13,10 @@ import Footer from '../components/footer/footer';
 const HomePage = () => {
   return (
     <main >
-      <Nav />
       <Title />
       <Introduction />
       <Gallery />
       <ParkDescriptions />
-      <Footer />
     </main>
   );
 };

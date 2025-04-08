@@ -1,5 +1,8 @@
 import React from 'react';
 import './styles/globals.scss';
+import Nav from '../components/nav/nav';
+import Footer from '../components/footer/footer';
+
 
 export const metadata = {
   title: 'Next.js with Sass',
@@ -14,7 +17,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <Nav/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
