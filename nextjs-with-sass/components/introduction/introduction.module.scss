@@ -8,9 +8,14 @@
     justify-content: center;
     align-items: center;
     padding: 3rem 9rem;
-    margin: 4rem 15%;
+    margin: 4rem 1rem;
     color: black;
     text-align: center;
+
+    @media (max-width: $breakpoint-md) {
+        padding: 1rem 3rem;
+        margin: 1rem;
+    }
 
 }
 
@@ -26,6 +31,10 @@
     width: 100%; // Full width
     overflow: hidden; // Prevent image overflow
 
+    @media (max-width: $breakpoint-md) {
+        font-size: 24px;
+    }
+
 }
 
 .paragraph {
@@ -40,4 +49,7 @@
     width: 100%; // Full width
     overflow: hidden; // Prevent image overflow
 
+    @media (max-width: $breakpoint-md) {
+        font-size: 14px;
+    }
 }

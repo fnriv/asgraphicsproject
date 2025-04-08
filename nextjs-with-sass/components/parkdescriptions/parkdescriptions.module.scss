@@ -1,36 +1,68 @@
 @import "../../app/styles/variables.scss";
 @import "../../app/styles/globals.scss";
 
-.park__container {
+$padding-desktop: 2rem;
+$padding-mobile: 1rem;
+$gap-desktop: 2rem;
+$gap-mobile: 1.5rem;
+
+.desktopLayout {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: space-between;
-    align-items: center;
-    margin: 4rem 15%;
-    text-align: left;
-    padding: 2rem 2rem;
+    gap: $gap-desktop;
+    padding: $padding-desktop;
+}
+  
+.mobileLayout {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-mobile;
+    padding: $padding-mobile;
 }
 
-.park {
-    // flex: 0 0 calc(50% - 20px); 
-    margin: 0 2rem;
-}
-
-.park__heading {
-    font-family: $font-primary;
-    font-size: 24;
-    font-weight: normal;
+.item {
+    background: white;
     padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #eee;
+
+    @media (min-width: $breakpoint-md) {
+        border: 0px;
+    }
 }
 
-.park__paragraph {
+.accordionHeader {
+    all: unset;
+    cursor: pointer;
+    font-family: $font-primary;
+    font-size: 24px;
+    font-weight: normal;
+    font-size: 1.1rem;
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+
+    @media (max-width: $breakpoint-md) {
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 0rem;
+    }
+    
+}
+
+.accordionContent {
     font-family: $font-secondary;
     font-size: 18px;
     font-weight: normal;
     padding: 1rem;
-    // border-radius: 8px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+}
 
-    position: relative; // Add this for absolute positioning of child
-    width: 95%; // Full width
-    overflow: hidden; // Prevent image overflow
+.show {
+    max-height: 1000px;
+    opacity: 1;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
 }

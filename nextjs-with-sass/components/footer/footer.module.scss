@@ -13,10 +13,10 @@
         text-transform: uppercase;
 
 
-    // @media (max-width: $breakpoint-md) {
-    //     flex-direction: column;
-    //     padding: 1rem;
-    // }
+    @media (max-width: $breakpoint-md) {
+        padding: 1rem;
+        font-size: 0.75rem;
+    }
     
 }
 .footer__logo{
@@ -61,3 +61,4 @@
         }
     }
 }
+

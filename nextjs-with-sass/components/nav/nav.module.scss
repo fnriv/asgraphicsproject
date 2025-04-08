@@ -7,13 +7,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    // background-color: $primary-color;
     color: white;
 
-    // @media (max-width: $breakpoint-md) {
-    //     flex-direction: column;
-    //     padding: 1rem;
-    // }
+    @media (max-width: $breakpoint-md) {
+        font-size: 0.75rem;
+    }
+
 }
 
 .nav__logo {
@@ -21,8 +20,10 @@
     color: black;
 
     &:hover {
-        color: #9a4a3f;
+        color: $primary-color;
     }
+
+    
 }
 
 .navbar__links {
@@ -36,7 +37,13 @@
         transition: color 0.3s;
 
         &:hover {
-            color: #778eaa;
+            color: $secondary-color;
         }
     }
+    
+    @media (max-width: $breakpoint-md){
+        font-size: 1rem;
+        gap: 1rem;
+    }
 }
+
